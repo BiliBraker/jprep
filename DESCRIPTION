@@ -1,0 +1,30 @@
+Package: jprep
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Krisztián",
+           family = "Boros",
+           role = c("aut", "cre"),
+           email = "soirkorob@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Contains functions and object for cleaning JSTOR articles
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    tidyverse,
+    dplyr,
+    tm,
+    stringi,
+    text2vec,
+    qdapDictionaries,
+    magrittr
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

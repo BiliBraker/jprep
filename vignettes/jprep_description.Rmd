@@ -1,0 +1,19 @@
+---
+title: "jprep_description"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{jprep_description}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(jprep)
+```
