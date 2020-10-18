@@ -46,17 +46,25 @@ remove_special <- tm::content_transformer(function(content, pattern) {
 unfreq_term_remove <- function(content, unfreq_terms) {
   word_freq <- table(unlist(text2vec::word_tokenizer(content)))
   word_list <- names(word_freq)
-  to_remove <- which(word_list %in% freq_terms)
+  to_remove <- which(word_list %in% unfreq_terms)
   word_remove <- paste0(" ", word_list[to_remove], " ")
   content_clean <- stringi::stri_replace_all_fixed(content, pattern = word_remove, replacement = " ", vectorize_all = F)
 
   return(content_clean)
 }
 
+#' Reduce discipline categories
+#'
+#' @description Reduces the discipline category to 1 for easier grouping.
+#'
+#' @param discs Disciplines (vector)
+#'
+#' @return One discipline category per case
+#'
 #' @export
-disc_sub <-  function(x){
-  d <-  x %>%
+disc_sub <-  function(discs){
+  discipline <-  discs %>%
     stringi::str_split_fixed(.,' ;',n=2)
-  d <-  d[1,1]
-  return(d)
+  discipline <-  discipline[1,1]
+  return(discipline)
 }

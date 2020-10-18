@@ -1,5 +1,5 @@
 Package: jprep
-Title: What the Package Does (One Line, Title Case)
+Title: Preprocessing tools for JSTOR DFR articles
 Version: 0.0.0.9000
 Authors@R:
     person(given = "Krisztián",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "soirkorob@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Contains functions and object for cleaning JSTOR articles
+Description: Contains functions and object for cleaning JSTOR articles obtained with Data For Research service
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
