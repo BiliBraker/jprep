@@ -64,7 +64,7 @@ unfreq_term_remove <- function(content, unfreq_terms) {
 #' @export
 disc_sub <-  function(discs){
   discipline <-  discs %>%
-    stringi::str_split_fixed(.,' ;',n=2)
+    stringr::str_split_fixed(.,' ;',n=2)
   discipline <-  discipline[1,1]
   return(discipline)
 }
