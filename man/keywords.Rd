@@ -8,7 +8,7 @@
 A vector containing keywords
 }
 \source{
-manually made
+Manually made
 }
 \usage{
 keywords
